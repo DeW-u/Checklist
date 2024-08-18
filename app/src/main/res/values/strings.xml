@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Checklist</string>
 
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
     <string name="calendar_tab">Calendar</string>
     <string name="add_tab">Add</string>
     <string name="checklist_tab">Checklist</string>
@@ -11,4 +14,8 @@
     <string name="trip_add_category">Category</string>
     <string name="trip_add_name_section">Trip name</string>
     <string name="trip_add_name_hint">Name your trip</string>
+    <string name="trip_add_date_section">Trip date</string>
+    <string name="trip_add_date_hint">Date your trip</string>
+    <string name="trip_add_category_add">Add</string>
+    <string name="trip_add_save">Save</string>
 </resources>

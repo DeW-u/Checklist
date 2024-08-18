@@ -2,6 +2,9 @@
 <resources>
     <string name="app_name">Checklist</string>
 
+    <string name="ok">Ok</string>
+    <string name="cancel">Anuluj</string>
+
     <string name="calendar_tab">Kalendarz</string>
     <string name="add_tab">Dodaj</string>
     <string name="checklist_tab">Checklist</string>
@@ -12,4 +15,8 @@
     <string name="trip_add_category">Kategoria</string>
     <string name="trip_add_name_section">Nazwa wycieczki</string>
     <string name="trip_add_name_hint">Nazwij swoją wycieczkę</string>
+    <string name="trip_add_date_section">Data wycieczki</string>
+    <string name="trip_add_date_hint">Ustaw datę swojej wycieczki</string>
+    <string name="trip_add_category_add">Dodaj</string>
+    <string name="trip_add_save">Zapisz</string>
 </resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="add_trip_section_name_item_id" type="id" />
+    <item name="add_trip_text_field_item_id" type="id" />
+    <item name="add_trip_date_picker_item_id" type="id" />
+    <item name="add_trip_category_item_id" type="id" />
+</resources>

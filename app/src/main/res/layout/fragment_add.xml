@@ -5,10 +5,15 @@
     android:id="@+id/addFragment">
 
     <data>
+
         <import type="android.view.View" />
 
         <variable
             name="adapter"
+            type="com.mikepenz.fastadapter.FastAdapter" />
+
+        <variable
+            name="adapterCategories"
             type="com.mikepenz.fastadapter.FastAdapter" />
     </data>
 
@@ -20,33 +25,75 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
             app:title="@string/trip_add_title"
-            app:titleTextAppearance="@style/Toolbar.TitleText"
-            android:layout_height="?attr/actionBarSize" />
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
 
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewTripFields"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:adapter="@{adapter}"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textViewCategory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/trip_add_category"
-            android:padding="@dimen/large_gap"
-            style="@style/Toolbar.TitleText"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerViewTripCategories"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:adapter="@{adapter}" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTripFields"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="@dimen/large_gap"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/large_gap"
+                android:requiresFadingEdge="vertical"
+                app:adapter="@{adapter}"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewCategory"
+                style="@style/Toolbar.TitleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/large_gap"
+                android:text="@string/trip_add_category"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerViewTripFields" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewTripCategories"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="@dimen/large_gap"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/large_gap"
+                android:paddingBottom="@dimen/large_gap"
+                android:requiresFadingEdge="vertical"
+                app:adapter="@{adapterCategories}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewCategory" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/large_gap"
+                android:backgroundTint="@color/primary"
+                android:fontFamily="@font/inter"
+                android:text="@string/trip_add_save"
+                android:textStyle="bold"
+                app:cornerRadius="@dimen/medium_gap"
+                app:elevation="@dimen/medium_gap"
+                android:translationZ="@dimen/medium_gap"
+                android:stateListAnimator="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </LinearLayout>
 </layout>
