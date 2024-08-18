@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Checklist</string>
+
+    <string name="calendar_tab">Calendar</string>
+    <string name="add_tab">Add</string>
+    <string name="checklist_tab">Checklist</string>
+    <string name="archive_tab">Archive</string>
+
+    <!-- Add Trip Strings -->
+    <string name="trip_add_title">Add your trip</string>
+    <string name="trip_add_category">Category</string>
+    <string name="trip_add_name_section">Trip name</string>
+    <string name="trip_add_name_hint">Name your trip</string>
+</resources>

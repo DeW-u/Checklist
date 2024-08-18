@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Checklist</string>
+
+    <string name="calendar_tab">Kalendarz</string>
+    <string name="add_tab">Dodaj</string>
+    <string name="checklist_tab">Checklist</string>
+    <string name="archive_tab">Archiwum</string>
+
+    <!-- Add Trip Strings -->
+    <string name="trip_add_title">Dodaj wycieczkę</string>
+    <string name="trip_add_category">Kategoria</string>
+    <string name="trip_add_name_section">Nazwa wycieczki</string>
+    <string name="trip_add_name_hint">Nazwij swoją wycieczkę</string>
+</resources>

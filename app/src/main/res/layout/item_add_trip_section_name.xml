@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="sectionTitle"
+            type="String" />
+    </data>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_xsmall"
+        android:layout_marginBottom="@dimen/padding_xsmall"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/medium_gap"
+        android:paddingEnd="@dimen/medium_gap"
+        app:justifyContent="space_between">
+
+        <TextView
+            style="@style/SectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{sectionTitle}"
+            android:textSize="@dimen/font_size_standard"
+            tools:text="TITLE"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</layout>

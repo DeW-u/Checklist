@@ -1,0 +1,28 @@
+buildscript {
+    apply from: 'libs.gradle'
+    apply from: 'versions-android-sdk.gradle'
+
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url 'https://jitpack.io' }
+    }
+
+    dependencies {
+        def classpathDependencies = rootProject.ext.classpathDependencies
+
+        classpath classpathDependencies.CPGradleTools
+        classpath classpathDependencies.CPKotlin
+        classpath classpathDependencies.CPKotlinExtensions
+        classpath classpathDependencies.CPKotlinSerialization
+        classpath classpathDependencies.CPGoogleServices
+        classpath classpathDependencies.CPFirebaseCrashlytics
+        classpath classpathDependencies.CPFirebaseAppdistribution
+        classpath classpathDependencies.CPNavigationSafearg
+        classpath classpathDependencies.CPHilt
+        classpath classpathDependencies.CPDetekt
+        classpath classpathDependencies.CPSecrets
+    }
+}

@@ -1,0 +1,179 @@
+ext {
+    mutlidex_version = '2.0.1'
+    kotlin_version = '1.7.20'
+    kotlin_serialization = '1.4.1'
+    rx_android_version = '2.1.1'
+    rx_java_version = '2.2.19'
+    rx_kotlin_version = '2.4.0'
+    joda_time_version = '2.12.1'
+    play_services_auth_version = '20.3.0'
+    play_services_location_version = '21.0.1'
+    prefference_version = '1.2.0'
+    core_ktx_version = '1.9.0'
+    databinding_version = '7.3.1'
+    work_manager_version = '2.7.1'
+
+    androidx_navigation_version = '2.5.3'
+    androidx_legacy_version = '1.0.0'
+    androidx_appcompat_version = '1.5.1'
+    androidx_lifecycle_version = '2.5.1'
+    androidx_activity_version = '1.6.1'
+
+    appDependencies = [
+            multidex                    : "androidx.multidex:multidex:$mutlidex_version",
+            kotlin                      : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            kotlinReflection            : "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version",
+            kotlinSerialization         : "org.jetbrains.kotlinx:kotlinx-serialization-cbor:$kotlin_serialization",
+            kotlinRuntime               : "org.jetbrains.kotlin:kotlin-script-runtime:$kotlin_version",
+            joda                        : "net.danlew:android.joda:$joda_time_version",
+            playServicesAuth            : "com.google.android.gms:play-services-auth:$play_services_auth_version",
+            playServicesLocation        : "com.google.android.gms:play-services-location:$play_services_location_version",
+            preference                  : "androidx.preference:preference:$prefference_version",
+            corektx                     : "androidx.core:core-ktx:$core_ktx_version",
+            databinding                 : "androidx.databinding:databinding-compiler:$databinding_version",
+            lifecycleCompiler           : "androidx.lifecycle:lifecycle-compiler:$androidx_lifecycle_version",
+            lifecycleViewModel          : "androidx.lifecycle:lifecycle-viewmodel-ktx:$androidx_lifecycle_version",
+            lifecycleService            : "androidx.lifecycle:lifecycle-service:$androidx_lifecycle_version",
+            lifecycleLiveData           : "androidx.lifecycle:lifecycle-livedata-ktx:$androidx_lifecycle_version",
+            lifecycleRuntime            : "androidx.lifecycle:lifecycle-runtime-ktx:$androidx_lifecycle_version",
+            lifecycleCommon             : "androidx.lifecycle:lifecycle-common-java8:$androidx_lifecycle_version",
+            workManager                 : "androidx.work:work-runtime-ktx:$work_manager_version",
+            activityX                   : "androidx.activity:activity:$androidx_activity_version",
+            activityKtx                 : "androidx.activity:activity-ktx:$androidx_activity_version"
+    ]
+
+    cp_gradle_version = '7.4.2'
+    cp_google_services_version = '4.3.13'
+    cp_firebase_crashlytics = '2.9.1'
+    cp_firebase_appdistribution = '3.0.3'
+    cp_hilt_version = '2.44'
+    cp_detekt_version = '1.21.0'
+    cp_secrets_version = '2.0.1'
+
+    classpathDependencies = [
+            CPGradleTools                       : "com.android.tools.build:gradle:$cp_gradle_version",
+            CPKotlin                            : "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version",
+            CPKotlinExtensions                  : "org.jetbrains.kotlin:kotlin-android-extensions:$kotlin_version",
+            CPKotlinSerialization               : "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version",
+            CPGoogleServices                    : "com.google.gms:google-services:$cp_google_services_version",
+            CPNavigationSafearg                 : "androidx.navigation:navigation-safe-args-gradle-plugin:$androidx_navigation_version",
+            CPFirebaseCrashlytics               : "com.google.firebase:firebase-crashlytics-gradle:$cp_firebase_crashlytics",
+            CPFirebaseAppdistribution           : "com.google.firebase:firebase-appdistribution-gradle:$cp_firebase_appdistribution",
+            CPHilt                              : "com.google.dagger:hilt-android-gradle-plugin:$cp_hilt_version",
+            CPDetekt                            : "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:$cp_detekt_version",
+            CPSecrets                           : "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin:$cp_secrets_version"
+    ]
+
+    firebaseCrashlyticsLog = [
+            analyticsKtx                        : "com.google.firebase:firebase-analytics-ktx",
+            crashlyticsKtx                      : "com.google.firebase:firebase-crashlytics-ktx"
+    ]
+
+    support_library_version = '28.0.0'
+    recyclerView_version = "1.2.1"
+    constraint_version = '2.1.4'
+    fast_adapter_version = '5.7.0'
+    drawerLayout_version = '1.1.1'
+    lottie_version = '3.3.1'
+    swipe_refresh_layout_version = '1.1.0'
+    material_version = '1.7.0'
+    rx_binding_version = '2.2.0'
+    splash_screen_version = '1.0.0'
+    flexbox_version = '3.0.0'
+    glide_version = '4.14.2'
+    transition_version = '1.4.1'
+
+    viewDependencies = [
+            appCompat                   : "androidx.appcompat:appcompat:$androidx_appcompat_version",
+            recyclerView                : "androidx.recyclerview:recyclerview:$recyclerView_version",
+            constraintLayout            : "androidx.constraintlayout:constraintlayout:$constraint_version",
+            fastAdapter                 : "com.mikepenz:fastadapter:$fast_adapter_version",
+            fastAdapterUI               : "com.mikepenz:fastadapter-extensions-ui:$fast_adapter_version",
+            fastAdapterDrag             : "com.mikepenz:fastadapter-extensions-drag:$fast_adapter_version",
+            fastAdapterSwipe            : "com.mikepenz:fastadapter-extensions-swipe:$fast_adapter_version",
+            fastAdapterUtils            : "com.mikepenz:fastadapter-extensions-utils:$fast_adapter_version",
+            fastAdapterDiffUtil         : "com.mikepenz:fastadapter-extensions-diff:$fast_adapter_version",
+            fastAdapterBinding          : "com.mikepenz:fastadapter-extensions-binding:$fast_adapter_version",
+            material                    : "com.google.android.material:material:$material_version",
+            drawerLayout                : "androidx.drawerlayout:drawerlayout:$drawerLayout_version",
+            navigationFragment          : "androidx.navigation:navigation-fragment-ktx:$androidx_navigation_version",
+            navigationUi                : "androidx.navigation:navigation-ui-ktx:$androidx_navigation_version",
+            swipeRefreshLayout          : "androidx.swiperefreshlayout:swiperefreshlayout:$swipe_refresh_layout_version",
+            splashScreen                : "androidx.core:core-splashscreen:$splash_screen_version",
+            flexbox                     : "com.google.android.flexbox:flexbox:$flexbox_version",
+            glide                       : "com.github.bumptech.glide:glide:$glide_version",
+            glideAnnotationProcessor    : "com.github.bumptech.glide:compiler:$glide_version",
+            transition                  : "androidx.transition:transition:$transition_version",
+            transitionKtx               : "androidx.transition:transition-ktx:$transition_version"
+    ]
+
+    kotlin_coroutines_version = '1.6.4'
+
+    coroutinesDependencies = [
+            kotlinCoroutines                    : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlin_coroutines_version",
+            kotlinCoroutinesAndroid             : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlin_coroutines_version",
+    ]
+
+    dagger_hilt_version = '2.44'
+    dagger_hilt_navigation_version = '1.0.0'
+
+    diDependencies = [
+            daggerHilt                      : "com.google.dagger:hilt-android:$dagger_hilt_version",
+            daggerHiltCompiler              : "com.google.dagger:hilt-compiler:$dagger_hilt_version",
+            daggerHiltNavigation            : "androidx.hilt:hilt-navigation-fragment:$dagger_hilt_navigation_version",
+            daggerHiltTesting               : "com.google.dagger:hilt-android-testing:$dagger_hilt_version"
+    ]
+
+    ok_http_version = '4.10.0'
+    retrofit_version = '2.9.0'
+    room_version = '2.4.3'
+    gson_version = '2.10'
+
+    networkDependencies = [
+            okHttp                       : "com.squareup.okhttp3:okhttp:$ok_http_version",
+            okHttpInterceptor            : "com.squareup.okhttp3:logging-interceptor:$ok_http_version",
+            retrofit                     : "com.squareup.retrofit2:retrofit:$retrofit_version",
+            retrofitGsonAdapter          : "com.squareup.retrofit2:converter-gson:$retrofit_version",
+            gson                         : "com.google.code.gson:gson:$gson_version"
+    ]
+
+    dbDependencies = [
+            room                         : "androidx.room:room-runtime:$room_version",
+            roomktx                      : "androidx.room:room-ktx:$room_version",
+            roomCompiler                 : "androidx.room:room-compiler:$room_version"
+    ]
+
+    kotlin_mockito_version = '4.0.0'
+    mockito_version = '4.8.1'
+    junit_version = '4.13.2'
+    truth_version = '1.0.1'
+    test_runner_version = '1.4.0'
+    test_espresso_version = '3.4.0'
+
+    coroutines_test_version = '1.6.4'
+    core_testing_version = '1.4.0'
+    android_core_testing_version = '2.1.0'
+    jUnit4Parameterized_version = '1.0'
+    espresso_version = '3.4.0'
+
+    testDependencies = [
+            junit                       : "junit:junit:$junit_version",
+            mockito                     : "org.mockito:mockito-core:$mockito_version",
+            mockitoKotlin               : "org.mockito.kotlin:mockito-kotlin:$kotlin_mockito_version",
+            googleTruth                 : "com.google.truth:truth:$truth_version",
+            espressoRunner              : "androidx.test:runner:$test_runner_version",
+            espresso                    : "androidx.test:espresso:espresso-core:$test_espresso_version",
+            coroutinesTest              : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_test_version",
+            androidCoreTesting          : "androidx.arch.core:core-testing:$android_core_testing_version",
+            coreTesting                 : "androidx.test:core:$core_testing_version",
+            androidxEspressoCore        : "androidx.test.espresso:espresso-core:$espresso_version",
+            androidxEspressoContrib     : "androidx.test.espresso:espresso-contrib:$espresso_version",
+            androidxEspressoIntents     : "androidx.test.espresso:espresso-intents:$espresso_version"
+    ]
+
+    security_crypto_version = '1.1.0-alpha03'
+
+    securityDependencies = [
+            securityCrypto              : "androidx.security:security-crypto:$security_crypto_version"
+    ]
+}

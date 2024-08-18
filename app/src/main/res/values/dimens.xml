@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lack_of_gap">0dp</dimen>
+    <dimen name="tiny_gap">2dp</dimen>
+    <dimen name="small_gap">4dp</dimen>
+    <dimen name="medium_gap">8dp</dimen>
+    <dimen name="xmedium_gap">12dp</dimen>
+    <dimen name="large_gap">16dp</dimen>
+    <dimen name="xlarge_gap">24dp</dimen>
+    <dimen name="xxlarge_gap">32dp</dimen>
+    <dimen name="minus_xxlarge_gap">-32dp</dimen>
+
+    <dimen name="margin_small">5dp</dimen>
+    <dimen name="margin_medium">10dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_xlarge">20dp</dimen>
+
+    <dimen name="padding_xxsmall">4dp</dimen>
+    <dimen name="padding_xsmall">8dp</dimen>
+    <dimen name="padding_small">12dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="font_size_smallest_acceptable">11sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_standard">14sp</dimen>
+    <dimen name="font_size_big">16sp</dimen>
+
+    <dimen name="font_size_header">24sp</dimen>
+</resources>
